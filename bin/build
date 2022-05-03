@@ -1,0 +1,2 @@
+#!/bin/sh
+cd /home/pi/openwhisk/src && docker run -i  mgalalm/action-golang-v1.17:rpi  -compile main <$1> 'exec.zip' && unzip -vl 'exec.zip'

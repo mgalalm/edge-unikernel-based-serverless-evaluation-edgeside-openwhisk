@@ -1,0 +1,2 @@
+#!/bin/sh
+cd /home/pi/openwhisk/src && wsk -i action update $1 exec.zip --docker mgalalm/action-golang-v1.17:rpi
